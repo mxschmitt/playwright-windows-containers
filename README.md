@@ -17,7 +17,7 @@ Demo project:
 
 ```bash
 git clone https://github.com/mxschmitt/playwright-windows-containers
-cd playwright-on-windows-containers
+cd playwright-windows-containers
 docker build -t mxschmitt/playwright-windows-containers .
 docker run --rm mxschmitt/playwright-windows-containers
 ```
