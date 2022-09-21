@@ -5,6 +5,10 @@
 - You need to use `mcr.microsoft.com/windows` or `mcr.microsoft.com/windows/server` as a base image, `servercore` or `nanoserver` don't work due to missing dependencies.
 - Firefox currently does not launch inside Windows Containers: https://github.com/microsoft/playwright/issues/13679
 
+## Requirements
+
+See here: https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce
+
 ## Usage
 
 See the [`Dockerfile`](./Dockerfile) for the Dockerfile.
