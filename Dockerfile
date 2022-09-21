@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/server:ltsc2022
+FROM mcr.microsoft.com/windows:1809
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='SilentlyContinue';"]
 
@@ -18,4 +18,4 @@ ADD tests /app/tests
 RUN npm ci
 RUN npx playwright install
 
-ENTRYPOINT [ "C:\\nodejs\\npx.cmd", "playwright", "test", "--project=Chromium", "--project=WebKit"]
+ENTRYPOINT [ "C:\\nodejs\\npx.cmd", "playwright", "test", "--project=Firefox"]
